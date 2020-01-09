@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Container, Col, Row, Button, Form } from 'react-bootstrap'
 
-function App() {
+import AlphaTable from './components/AlphaTable'
+import {Alphabet} from './constants.js'
+
+
+export default () => {
+  const [wordOptions, setWordOptions] = useState()
+  const [input, setInput] = useState("")
+  const handleGenerate = () => {
+  }
+  const handleInputChange = event => {
+    setInput(event.target.value)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <Container>
+        <Row>
+          <Col md={6}>
+            <AlphaTable alphabet={Alphabet} />
+          </Col>
+          <Col>
+            <Form>
+              <Form.Control
+                onChange={handleInputChange}
+                value={input}
+              />
+            </Form>
+            <Button
+              onClick={handleGenerate}
+              varient="primary"
+              size="lg">
+              Generate
+            </Button>
+          </Col>
+        </Row>
+      </Container>
     </div>
-  );
+  )
 }
-
-export default App;
