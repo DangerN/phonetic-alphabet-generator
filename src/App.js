@@ -9,13 +9,12 @@ export default () => {
   const wordOptions = {}
   const [input, setInput] = useState("")
   const reducer = (state, action) => {
+    const newState = [...state]
     newState[action.index] = action.word
     return newState
   }
   const [generated, dispatch] = useReducer(reducer, [""])
   const handleGenerate = event => {
-    console.log(dispatch);
-    console.log(generated);
     event.preventDefault()
     alphabet.char.map((letter, index) =>{
       axios.get(`http://api.datamuse.com/words/?sp=${letter}*&topics=${input}`).then(res=>{
@@ -37,18 +36,18 @@ export default () => {
             <AlphaTable alphabet={alphabet} generated={generated} />
           </Col>
           <Col>
-            <Form>
+            <Form onSubmit={handleGenerate}>
               <Form.Control
                 onChange={handleInputChange}
                 value={input}
               />
+              <Button
+                varient="primary"
+                size="lg"
+                type="submit">
+                Generate
+              </Button>
             </Form>
-            <Button
-              onClick={handleGenerate}
-              varient="primary"
-              size="lg">
-              Generate
-            </Button>
           </Col>
         </Row>
       </Container>

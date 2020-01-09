@@ -8,7 +8,7 @@ export default props => {
       return (<tr key={letter}>
         <td>{letter}</td>
         <td>{NATO[index]}</td>
-        <td>{props.generated[index]}</td>
+        <td>{props.generated[index] ? props.generated[index].replace(/^\w/, c=>c.toUpperCase()) : null}</td>
       </tr>)
     })
   }
@@ -17,7 +17,7 @@ export default props => {
         <thead>
           <tr>
             <th>Letter</th>
-            <th>Nato</th>
+            <th>NATO</th>
             <th>Generated</th>
           </tr>
         </thead>
