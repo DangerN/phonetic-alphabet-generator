@@ -44,7 +44,7 @@ export default props => {
           <tr>
             <th>Letter</th>
             <th>NATO</th>
-            <th>Generated</th>
+            <th style={{width: '50%'}}>Generated</th>
           </tr>
         </thead>
         <tbody>
