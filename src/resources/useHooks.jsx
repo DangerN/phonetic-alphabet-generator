@@ -21,9 +21,6 @@ export const useGeneratedWord = () => {
 export const useCharLock = locks => {
   const [state, setState] = useState(locks)
   const setLock = (lock, index) => {
-    console.log('state', state);
-    console.log('lock', lock);
-    console.log('index', index);
     const newState = [...state]
     newState[index] = lock
     setState(newState)
