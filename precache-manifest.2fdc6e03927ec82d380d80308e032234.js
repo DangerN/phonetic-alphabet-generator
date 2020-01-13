@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e946efc05cbe6bc499a17facca9eaa1",
+    "revision": "12de5815e9c42049d4c74f1480b76452",
     "url": "/phonetic-alphabet-generator/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/phonetic-alphabet-generator/static/js/2.c4468c46.chunk.js.LICENSE"
   },
   {
-    "revision": "fa16c300420eae5aa405",
-    "url": "/phonetic-alphabet-generator/static/js/main.4356aa5b.chunk.js"
+    "revision": "6d9e4b75cb1e72de30f0",
+    "url": "/phonetic-alphabet-generator/static/js/main.2ef9430f.chunk.js"
   },
   {
     "revision": "6c019b3296d5db9441bb",
