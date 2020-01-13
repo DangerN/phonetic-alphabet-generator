@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/phonetic-alphabet-generator/precache-manifest.2fdc6e03927ec82d380d80308e032234.js"
+  "/phonetic-alphabet-generator/precache-manifest.82afa12e259cad492569bd559ee03d55.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/phonetic-alphabet-generator/static/js/main.2ef9430f.chunk.js",
-    "main.js.map": "/phonetic-alphabet-generator/static/js/main.2ef9430f.chunk.js.map",
+    "main.js": "/phonetic-alphabet-generator/static/js/main.5fc29a34.chunk.js",
+    "main.js.map": "/phonetic-alphabet-generator/static/js/main.5fc29a34.chunk.js.map",
     "runtime-main.js": "/phonetic-alphabet-generator/static/js/runtime-main.fabd37ae.js",
     "runtime-main.js.map": "/phonetic-alphabet-generator/static/js/runtime-main.fabd37ae.js.map",
     "static/css/2.ead1b15b.chunk.css": "/phonetic-alphabet-generator/static/css/2.ead1b15b.chunk.css",
-    "static/js/2.c4468c46.chunk.js": "/phonetic-alphabet-generator/static/js/2.c4468c46.chunk.js",
-    "static/js/2.c4468c46.chunk.js.map": "/phonetic-alphabet-generator/static/js/2.c4468c46.chunk.js.map",
+    "static/js/2.a7bd0ea0.chunk.js": "/phonetic-alphabet-generator/static/js/2.a7bd0ea0.chunk.js",
+    "static/js/2.a7bd0ea0.chunk.js.map": "/phonetic-alphabet-generator/static/js/2.a7bd0ea0.chunk.js.map",
     "index.html": "/phonetic-alphabet-generator/index.html",
-    "precache-manifest.2fdc6e03927ec82d380d80308e032234.js": "/phonetic-alphabet-generator/precache-manifest.2fdc6e03927ec82d380d80308e032234.js",
+    "precache-manifest.82afa12e259cad492569bd559ee03d55.js": "/phonetic-alphabet-generator/precache-manifest.82afa12e259cad492569bd559ee03d55.js",
     "service-worker.js": "/phonetic-alphabet-generator/service-worker.js",
     "static/css/2.ead1b15b.chunk.css.map": "/phonetic-alphabet-generator/static/css/2.ead1b15b.chunk.css.map",
-    "static/js/2.c4468c46.chunk.js.LICENSE": "/phonetic-alphabet-generator/static/js/2.c4468c46.chunk.js.LICENSE"
+    "static/js/2.a7bd0ea0.chunk.js.LICENSE": "/phonetic-alphabet-generator/static/js/2.a7bd0ea0.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.fabd37ae.js",
     "static/css/2.ead1b15b.chunk.css",
-    "static/js/2.c4468c46.chunk.js",
-    "static/js/main.2ef9430f.chunk.js"
+    "static/js/2.a7bd0ea0.chunk.js",
+    "static/js/main.5fc29a34.chunk.js"
   ]
 }
