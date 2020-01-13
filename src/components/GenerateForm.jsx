@@ -4,11 +4,13 @@ import { FaDiceD6, FaRegClipboard } from 'react-icons/fa'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
+import Alert from 'react-bootstrap/Alert'
 
 export default props => {
   const { genDispatch, generated, wordDispatch, wordOptions, alphabet, charLocked } = props
   const [input, setInput] = useState("")
   const [randomVis, setRandomVis] = useState(false)
+  const [apiAlert, setApiAlert] = useState(false)
 
   generated.length === 26 && !randomVis && setRandomVis(true)
 
@@ -40,13 +42,23 @@ export default props => {
         wordDispatch({letter: letter, options: res.data})
         genDispatch({word: res.data[0].word, index: index})
       }).catch(e=>{
-        console.log(e);
+        console.log(e)
+        setApiAlert(true)
       })
     })
   }
 
+  const apiFailAlert = () => {
+    return (
+      <Alert variant='danger'>
+        There was a problem contacting Datamuse. The maximum daily allowed requests may have been exceeded. Try again tommorow. Open the console for details.
+      </Alert>
+    )
+  }
+
   return (
     <Form onSubmit={handleGenerate} >
+      { apiAlert ? apiFailAlert() : null}
       <InputGroup >
         <Form.Control
           onChange={handleInputChange}
