@@ -38,7 +38,7 @@ export default props => {
   const handleGenerate = event => {
     event.preventDefault()
     alphabet.char.forEach((letter, index) =>{
-      axios.get(`https://api.datamuse.com/words/?sp=${letter}*&topics=${input}`,).then(res=>{
+      axios.get(`https://api.datamuse.com/words/?sp=${letter}*&topics=${input}`).then(res=>{
         wordDispatch({letter: letter, options: res.data})
         genDispatch({word: res.data[0].word, index: index})
       }).catch(e=>{
